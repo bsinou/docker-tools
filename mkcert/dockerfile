@@ -1,5 +1,5 @@
 # Build mkcert binary in another bigger container intrumented with go, git,...
-FROM golang:1.15.2 as builder
+FROM golang:1.15.5 as builder
 
 RUN cd /go && \
     go get -u github.com/FiloSottile/mkcert && \
